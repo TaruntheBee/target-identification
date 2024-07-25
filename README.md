@@ -14,19 +14,13 @@ The data provided includes:
 ### Data Conversion
 The first step is converting the speed from knots to kilometers per hour (km/h) and the altitude from feet to meters as the formula is for km/h and meters.
 - **Speed Conversion**: 
-  \[
-  \text{Speed (km/h)} = \text{Speed (kts)} \times 1.852
-  \]
+  Speed (km/h) = Speed (kts) × 1.852
 - **Altitude Conversion**: 
-  \[
-  \text{Altitude (m)} = \text{Altitude (ft)} \times 0.3048
-  \]
+  Altitude (m) = Altitude (ft) × 0.3048
 
 ### Rate of Climb/Descent (ROCD)
 To understand the vertical movement, the rate of climb/descent (ROCD) is calculated between consecutive data points:
-\[
-\text{ROCD} = \frac{\text{Altitude}(n) - \text{Altitude}(n-1)}{\text{Time}(n) - \text{Time}(n-1)}
-\]
+ROCD = Altitude(n)−Altitude(n-1) / Time(n)−Time(n-1)
 We are calculating ROCD to use this data to filter for helicopter and aeroplane.
 
 ### Classification Criteria
