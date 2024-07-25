@@ -20,7 +20,7 @@ The first step is converting the speed from knots to kilometers per hour (km/h) 
 
 ### Rate of Climb/Descent (ROCD)
 To understand the vertical movement, the rate of climb/descent (ROCD) is calculated between consecutive data points:
-ROCD = Altitude(n)−Altitude(n-1) / Time(n)−Time(n-1)
+- ROCD = Altitude(n) − Altitude(n-1) / Time(n) − Time(n-1)
 We are calculating ROCD to use this data to filter for helicopter and aeroplane.
 
 ### Classification Criteria
